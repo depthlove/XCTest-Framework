@@ -1,5 +1,13 @@
 cmake_minimum_required(VERSION 3.4.1)
 
+# Xcode new build system (CMAKE_XCODE_BUILD_SYSTEM=12)
+# Xcode Legacy build system (CMAKE_XCODE_BUILD_SYSTEM=1)
+
+message(STATUS "default CMAKE_XCODE_BUILD_SYSTEM: ${CMAKE_XCODE_BUILD_SYSTEM}")
+
+set(CMAKE_XCODE_BUILD_SYSTEM 1)
+message(STATUS "change CMAKE_XCODE_BUILD_SYSTEM: ${CMAKE_XCODE_BUILD_SYSTEM}")
+
 enable_testing()
 find_package(XCTest REQUIRED)
 
