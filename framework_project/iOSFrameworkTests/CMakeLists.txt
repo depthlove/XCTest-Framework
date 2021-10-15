@@ -34,5 +34,3 @@ set_target_properties(iOSFrameworkTests PROPERTIES
     RESOURCE "${RESOURCES}"
     OUTPUT_NAME ${CUSTOM_OUTPUT_NAME}
 )
-
-xctest_add_test(XCTest.iOSFramework iOSFrameworkTests)
